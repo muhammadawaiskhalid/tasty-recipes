@@ -1,157 +1,154 @@
 # 🍽️ Tasty Recipes
 
-Tasty Recipes is a multi-page recipe website designed to provide users with simple, clear, and easy-to-follow cooking recipes.
-
-This project represents the first version of the application and focuses on building a well-structured website using semantic HTML5. The project is designed for future expansion with CSS, JavaScript, backend technologies, and database integration.
-
-## 📌 Project Overview
-
-The website allows users to browse available recipes, open individual recipe pages, view ingredients and cooking instructions, learn about the website, and access a contact form.
-
-The current release establishes the structural foundation of the application before additional frontend and backend functionality is introduced.
-
-## ✨ Features
-
-- Multi-page website architecture
-- Semantic HTML5 structure
-- Responsive viewport configuration
-- Website navigation
-- Featured recipe section
-- Recipe catalogue
-- Individual recipe detail pages
-- Recipe images
-- Ingredients lists
-- Step-by-step cooking instructions
-- Preparation and cooking information
-- About page
-- Contact form
-- SEO-friendly page titles and meta descriptions
-- Organized project directory structure
-
-## 🛠️ Technologies Used
-
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Website structure and content |
-| Git | Version control |
-| GitHub | Source code management |
-| Visual Studio Code | Development environment |
-
-## 📂 Project Structure
-
-    01-tasty-recipes-html/
-    │
-    ├── index.html
-    ├── recipes.html
-    ├── about.html
-    ├── contact.html
-    ├── README.md
-    │
-    ├── recipes/
-    │   ├── chicken-pasta.html
-    │   ├── beef-burger.html
-    │   └── pancakes.html
-    │
-    ├── assets/
-    │   └── images/
-    │       ├── chicken-pasta.jpg
-    │       ├── beef-burger.jpg
-    │       └── pancakes.jpg
-    │
-    └── docs/
-        └── Tasty_Recipes_SRS.docx
-
-## 📄 Pages
-
-### Home
-Introduces the website and displays featured recipes.
-
-### Recipes
-Provides access to the available recipe collection.
-
-### Recipe Details
-Each recipe has a dedicated page containing preparation information, ingredients, and step-by-step cooking instructions.
-
-Current recipes include:
-
-- Chicken Pasta
-- Beef Burger
-- Pancakes
-
-### About
-Explains the purpose and concept of Tasty Recipes.
-
-### Contact
-Provides a contact form for questions, feedback, and recipe suggestions.
-
-> The contact form is currently frontend-only and will become functional when backend integration is introduced.
-
-## 📋 Software Documentation
-
-The project includes a Software Requirements Specification (SRS) containing the requirements and design documentation for the system.
-
-The documentation is available inside the `docs` directory.
-
-## 🚀 Running the Project
-
-1. Clone the repository:
-
-       git clone https://github.com/muhammadawaiskhalid/01-tasty-recipes-html.git
-
-2. Open the project directory.
-
-3. Open `index.html` in a web browser.
-
-No additional packages, dependencies, or installation steps are required for the current HTML version.
-
-## 🗺️ Development Roadmap
-
-The project is intended to evolve through multiple development stages.
-
-### Version 1 — HTML5
-- Website structure
-- Navigation
-- Recipe pages
-- Images
-- Contact form
-- Semantic markup
-
-### Version 2 — CSS
-- Professional user interface
-- Responsive layout
-- Recipe cards
-- Navigation styling
-- Improved typography
-- Mobile-friendly design
-
-### Version 3 — JavaScript
-- Recipe search
-- Filtering
-- Interactive components
-- Form validation
-- Improved user experience
-
-### Version 4 — Backend & Database
-- Dynamic recipe management
-- Database integration
-- Functional contact form
-- Server-side processing
-- Administrative functionality
+A modern, responsive recipe website built with **HTML5, CSS3, and Vanilla JavaScript**. Tasty Recipes provides an easy-to-use interface for browsing, searching, filtering, and viewing detailed recipes across multiple food categories.
 
 ## 🌐 Live Demo
 
-The live deployment link will be added after the project is published using GitHub Pages.
+**GitHub Pages:**  
+https://muhammadawaiskhalid.github.io/01-tasty-recipes-html/
+
+## ✨ Features
+
+- Modern and responsive user interface
+- Responsive navigation menu
+- Recipes dropdown navigation
+- Recipe search functionality
+- Category-based recipe filtering
+- URL-based category filtering
+- 9 detailed recipe pages
+- Ingredients and step-by-step cooking instructions
+- Related recipe recommendations
+- About and Contact pages
+- Client-side contact form validation
+- Scroll reveal animations
+- Optimized responsive images
+- Custom favicon
+- Mobile-friendly layout
+
+## 🍴 Recipe Collection
+
+The website currently includes:
+
+1. Chicken Pasta
+2. Beef Burger
+3. Fluffy Pancakes
+4. Grilled Chicken
+5. Homemade Pizza
+6. Chocolate Cake
+7. Fresh Salad
+8. Fried Rice
+9. Breakfast Bowl
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Node.js
+- Sharp — image optimization
+- Git
+- GitHub
+- GitHub Pages
+
+## 📁 Project Structure
+
+```text
+01-tasty-recipes-html/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── images/
+│   └── js/
+│       └── main.js
+├── docs/
+│   └── Tasty_Recipes_SRS_v1.0.pdf
+├── recipes/
+│   ├── beef-burger.html
+│   ├── breakfast-bowl.html
+│   ├── chicken-pasta.html
+│   ├── chocolate-cake.html
+│   ├── fresh-salad.html
+│   ├── fried-rice.html
+│   ├── grilled-chicken.html
+│   ├── pancakes.html
+│   └── pizza.html
+├── scripts/
+│   └── optimize-images.js
+├── about.html
+├── contact.html
+├── index.html
+├── recipes.html
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## 🚀 Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/muhammadawaiskhalid/01-tasty-recipes-html.git
+```
+
+Open the project directory:
+
+```bash
+cd 01-tasty-recipes-html
+```
+
+Then open `index.html` in your browser.
+
+No backend server is required for the website.
+
+## 🖼️ Image Optimization
+
+The project includes a Node.js image optimization script powered by **Sharp**.
+
+Install the development dependencies:
+
+```bash
+npm install
+```
+
+Run image optimization:
+
+```bash
+node scripts/optimize-images.js
+```
+
+Original high-resolution image backups are excluded from Git through `.gitignore`.
+
+## 📄 Documentation
+
+The Software Requirements Specification (SRS) is available here:
+
+```text
+docs/Tasty_Recipes_SRS_v1.0.pdf
+```
+
+It documents the project requirements, architecture, use cases, diagrams, testing, and implementation details.
+
+## ⚠️ Current Limitations
+
+- The website uses static HTML, CSS, and JavaScript.
+- No backend or database is currently implemented.
+- Contact form validation is client-side only and does not send messages to a server.
+- Recipe data is stored directly in HTML pages.
+
+## 📌 Version
+
+**Version 1.0.0**
+
+Initial complete and stable release of Tasty Recipes.
 
 ## 👨‍💻 Author
 
 **Muhammad Awais Khalid**
 
-Software Developer
+GitHub: https://github.com/muhammadawaiskhalid
 
-GitHub: `@muhammadawaiskhalid`
+## 📜 License
 
-## 📈 Project Status
-
-**Version 1.0 — HTML Foundation**
-
-The initial HTML version is complete. Future versions will extend the same project with styling, interactivity, and backend functionality.
+This project is created for learning, software development practice, and portfolio demonstration.
