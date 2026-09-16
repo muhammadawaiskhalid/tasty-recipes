@@ -1,0 +1,5 @@
+# Dependencies
+node_modules/
+
+# Original high-resolution image backups
+assets/images-backup/

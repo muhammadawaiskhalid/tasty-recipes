@@ -4,73 +4,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tasty Recipes - Discover simple and delicious homemade recipes.">
-    <title>Tasty Recipes | Home</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <meta name="description"
+        content="Discover simple, delicious and easy-to-follow homemade recipes with Tasty Recipes.">
+
+    <title>Tasty Recipes | Discover Delicious Recipes</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Tasty Recipes</h1>
-        <p>Simple recipes. Delicious results.</p>
+    <!-- Header -->
+    <header class="site-header">
+    <div class="container navbar">
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="recipes.html">Recipes</a>
+        <a href="index.html" class="logo">
+            Tasty<span>Recipes</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html" class="active">Home</a>
+
+            <div class="nav-dropdown">
+                <a href="recipes.html" class="dropdown-toggle">
+                    Recipes <span class="dropdown-arrow"></span>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="recipes.html">All Recipes</a>
+                    <a href="recipes.html?category=breakfast">Breakfast</a>
+                    <a href="recipes.html?category=lunch">Lunch</a>
+                    <a href="recipes.html?category=dinner">Dinner</a>
+                    <a href="recipes.html?category=healthy">Healthy</a>
+                    <a href="recipes.html?category=dessert">Dessert</a>
+                </div>
+            </div>
+
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+
         </nav>
-    </header>
+
+    </div>
+</header>
+
 
     <main>
 
-        <section>
-            <h2>Welcome to Tasty Recipes</h2>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-content">
 
-            <p>
-                Discover simple and delicious recipes that you can prepare
-                at home for yourself, your family, and your friends.
-            </p>
+                <div class="hero-text">
+                    <span class="eyebrow">Fresh • Simple • Delicious</span>
 
-            <a href="recipes.html">Explore Recipes</a>
+                    <h1>
+                        Discover recipes you'll
+                        <span>love to cook.</span>
+                    </h1>
+
+                    <p>
+                        Explore simple homemade recipes with easy-to-follow
+                        instructions, everyday ingredients and delicious results.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="recipes.html" class="btn btn-primary">
+                            Explore Recipes
+                        </a>
+
+                        <a href="#featured" class="btn btn-secondary">
+                            Featured Recipes
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                     <img src="assets/images/hero-food.jpg"
+                     alt="Selection of delicious homemade food">
+                </div>
+
+            </div>
         </section>
 
-        <section>
-            <h2>Featured Recipes</h2>
 
-            <article>
-                <h3>Chicken Pasta</h3>
-                <img src="assets/images/chicken-pasta.jpg"
-     alt="Chicken pasta"
-     width="300">
-                <p>A simple and creamy chicken pasta perfect for a quick meal.</p>
-                <a href="recipes/chicken-pasta.html">View Recipe</a>
-            </article>
+        <!-- Statistics -->
+        <section class="stats">
+            <div class="container stats-grid">
 
-            <article>
-                <h3>Beef Burger</h3>
-                <img src="assets/images/beef-burger.jpg"
-     alt="Beef burger"
-     width="300">
-                <p>A juicy homemade beef burger with fresh ingredients.</p>
-                <a href="recipes/beef-burger.html">View Recipe</a>
-            </article>
+                <div class="stat">
+                    <strong>3+</strong>
+                    <span>Recipes</span>
+                </div>
 
-            <article>
-                <h3>Pancakes</h3>
-                <img src="assets/images/pancakes.jpg"
-     alt="Pancakes"
-     width="300">
-                <p>Soft and fluffy homemade pancakes perfect for breakfast.</p>
-                <a href="recipes/pancakes.html">View Recipe</a>
-            </article>
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Homemade</span>
+                </div>
+
+                <div class="stat">
+                    <strong>Easy</strong>
+                    <span>Instructions</span>
+                </div>
+
+                <div class="stat">
+                    <strong>Fresh</strong>
+                    <span>Ideas</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Featured Recipes -->
+        <section class="featured section" id="featured">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Popular Choices</span>
+                        <h2>Featured Recipes</h2>
+                    </div>
+
+                    <a href="recipes.html" class="text-link">
+                        View All Recipes →
+                    </a>
+                </div>
+
+
+                <div class="recipe-grid">
+
+                    <!-- Chicken Pasta -->
+                    <article class="recipe-card">
+
+                        <div class="recipe-image">
+                            <img src="assets/images/chicken-pasta.jpg"
+                                alt="Creamy chicken pasta">
+
+                            <span class="recipe-badge">Popular</span>
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>40 min</span>
+                                <span>4 servings</span>
+                            </div>
+
+                            <h3>Chicken Pasta</h3>
+
+                            <p>
+                                Creamy chicken pasta prepared with simple
+                                ingredients for a satisfying homemade meal.
+                            </p>
+
+                            <a href="recipes/chicken-pasta.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Beef Burger -->
+                    <article class="recipe-card">
+
+                        <div class="recipe-image">
+                            <img src="assets/images/beef-burger.jpg"
+                                alt="Homemade beef burger">
+
+                            <span class="recipe-badge">Classic</span>
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>30 min</span>
+                                <span>4 servings</span>
+                            </div>
+
+                            <h3>Beef Burger</h3>
+
+                            <p>
+                                A juicy homemade beef burger layered with
+                                fresh vegetables, cheese and flavorful sauce.
+                            </p>
+
+                            <a href="recipes/beef-burger.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pancakes -->
+                    <article class="recipe-card">
+
+                        <div class="recipe-image">
+                            <img src="assets/images/pancakes.jpg"
+                                alt="Fluffy homemade pancakes">
+
+                            <span class="recipe-badge">Breakfast</span>
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>25 min</span>
+                                <span>4 servings</span>
+                            </div>
+
+                            <h3>Fluffy Pancakes</h3>
+
+                            <p>
+                                Light and fluffy pancakes that make a simple
+                                and delicious breakfast for any morning.
+                            </p>
+
+                            <a href="recipes/pancakes.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Why Tasty Recipes -->
+        <section class="why-us section">
+
+            <div class="container">
+
+                <div class="center-heading">
+                    <span class="eyebrow">Why Tasty Recipes?</span>
+                    <h2>Cooking made simple.</h2>
+
+                    <p>
+                        Recipes designed around clarity, simplicity and
+                        ingredients you can easily find.
+                    </p>
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">01</div>
+                        <h3>Simple Ingredients</h3>
+                        <p>
+                            Practical recipes made using familiar ingredients
+                            without unnecessary complexity.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">02</div>
+                        <h3>Clear Instructions</h3>
+                        <p>
+                            Straightforward cooking steps that are easy to
+                            understand and follow.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">03</div>
+                        <h3>Delicious Results</h3>
+                        <p>
+                            Enjoy satisfying homemade meals designed for
+                            everyday cooking.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+
+            <div class="container cta">
+
+                <div>
+                    <span class="eyebrow">Ready to Cook?</span>
+                    <h2>Find your next favorite recipe.</h2>
+
+                    <p>
+                        Browse our recipe collection and discover something
+                        delicious to prepare today.
+                    </p>
+                </div>
+
+                <a href="recipes.html" class="btn btn-light">
+                    Browse Recipes
+                </a>
+
+            </div>
+
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Tasty Recipes. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    Tasty<span>Recipes</span>
+                </a>
+
+                <p>
+                    Simple recipes, clear instructions and delicious
+                    homemade food.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigation</h3>
+
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Recipes</h3>
+
+                <a href="recipes/chicken-pasta.html">Chicken Pasta</a>
+                <a href="recipes/beef-burger.html">Beef Burger</a>
+                <a href="recipes/pancakes.html">Pancakes</a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Tasty Recipes. All rights reserved.</p>
+        </div>
+
     </footer>
+
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 

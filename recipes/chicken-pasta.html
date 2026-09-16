@@ -1,81 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Easy homemade chicken pasta recipe with ingredients and instructions.">
+
+    <meta name="description"
+          content="Learn how to make creamy chicken pasta with simple ingredients and easy step-by-step instructions.">
+
     <title>Chicken Pasta | Tasty Recipes</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Tasty Recipes</h1>
+<header class="site-header">
+    <div class="container navbar">
 
-        <nav>
+        <a href="../index.html" class="logo">
+            Tasty<span>Recipes</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="../index.html">Home</a>
+
+            <div class="nav-dropdown">
+                <a href="../recipes.html" class="dropdown-toggle active">
+                    Recipes <span class="dropdown-arrow"></span>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="../recipes.html">All Recipes</a>
+                    <a href="../recipes.html?category=breakfast">Breakfast</a>
+                    <a href="../recipes.html?category=lunch">Lunch</a>
+                    <a href="../recipes.html?category=dinner">Dinner</a>
+                    <a href="../recipes.html?category=healthy">Healthy</a>
+                    <a href="../recipes.html?category=dessert">Dessert</a>
+                </div>
+            </div>
+
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- RECIPE HEADER -->
+
+    <section class="recipe-detail-hero">
+
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <a href="../recipes.html">Recipes</a>
+                <span>›</span>
+                <span>Chicken Pasta</span>
+            </div>
+
+
+            <div class="recipe-detail-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Dinner • Popular
+                    </span>
+
+                    <h1>
+                        Creamy Chicken
+                        <span>Pasta.</span>
+                    </h1>
+
+                    <p>
+                        Tender chicken, creamy sauce and perfectly
+                        cooked pasta come together in a comforting
+                        meal that's simple enough for any day.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="recipe-detail-image">
+                <img src="../assets/images/chicken-pasta.jpg"
+                     alt="Creamy chicken pasta">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECIPE INFORMATION -->
+
+    <section class="recipe-info-bar">
+
+        <div class="container recipe-info-grid">
+
+            <div>
+                <span>Prep Time</span>
+                <strong>15 min</strong>
+            </div>
+
+            <div>
+                <span>Cook Time</span>
+                <strong>25 min</strong>
+            </div>
+
+            <div>
+                <span>Total Time</span>
+                <strong>40 min</strong>
+            </div>
+
+            <div>
+                <span>Servings</span>
+                <strong>4</strong>
+            </div>
+
+            <div>
+                <span>Difficulty</span>
+                <strong>Easy</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INGREDIENTS + INSTRUCTIONS -->
+
+    <section class="recipe-body section">
+
+        <div class="container recipe-body-grid">
+
+            <!-- INGREDIENTS -->
+
+            <aside class="ingredients-card">
+
+                <span class="eyebrow">What You'll Need</span>
+
+                <h2>Ingredients</h2>
+
+                <div class="ingredient-list">
+
+                    <label>
+                        <input type="checkbox">
+                        <span>300g pasta</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>2 chicken breasts</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>2 tablespoons olive oil</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>3 garlic cloves, minced</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>1 cup cooking cream</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>½ cup grated Parmesan cheese</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Salt and black pepper</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Fresh parsley for garnish</span>
+                    </label>
+
+                </div>
+
+            </aside>
+
+
+            <!-- INSTRUCTIONS -->
+
+            <div class="instructions">
+
+                <span class="eyebrow">Step By Step</span>
+
+                <h2>Instructions</h2>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">01</span>
+
+                    <div>
+                        <h3>Cook the pasta</h3>
+
+                        <p>
+                            Bring a large pot of salted water to
+                            a boil. Cook the pasta according to
+                            the package instructions until al dente,
+                            then drain and set aside.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">02</span>
+
+                    <div>
+                        <h3>Prepare the chicken</h3>
+
+                        <p>
+                            Cut the chicken into bite-sized pieces
+                            and season with salt and black pepper.
+                            Heat olive oil in a large pan over
+                            medium-high heat.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">03</span>
+
+                    <div>
+                        <h3>Cook until golden</h3>
+
+                        <p>
+                            Add the chicken to the hot pan and cook
+                            until golden on the outside and fully
+                            cooked through. Remove temporarily
+                            from the pan.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">04</span>
+
+                    <div>
+                        <h3>Make the creamy sauce</h3>
+
+                        <p>
+                            Reduce the heat and add the minced garlic.
+                            Cook briefly, then add the cream and
+                            Parmesan. Stir until smooth and creamy.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">05</span>
+
+                    <div>
+                        <h3>Bring everything together</h3>
+
+                        <p>
+                            Return the chicken to the pan and add
+                            the cooked pasta. Toss everything
+                            together until the pasta is evenly
+                            coated with the sauce.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">06</span>
+
+                    <div>
+                        <h3>Serve</h3>
+
+                        <p>
+                            Taste and adjust the seasoning if needed.
+                            Finish with fresh parsley and additional
+                            Parmesan before serving.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COOKING TIP -->
+
+    <section class="recipe-tip-section">
+
+        <div class="container">
+
+            <div class="recipe-tip">
+
+                <span class="tip-label">Chef's Tip</span>
+
+                <h2>
+                    Save a little pasta water.
+                </h2>
+
+                <p>
+                    If your sauce becomes too thick, add a small
+                    amount of reserved pasta water until you reach
+                    your preferred consistency.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RELATED RECIPES -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">
+                        Keep Cooking
+                    </span>
+
+                    <h2>You might also like.</h2>
+                </div>
+
+                <a href="../recipes.html"
+                   class="text-link">
+                    View All Recipes →
+                </a>
+
+            </div>
+
+
+            <div class="recipe-grid related-recipes">
+
+                <article class="recipe-card">
+
+                    <div class="recipe-image">
+
+                        <img src="../assets/images/beef-burger.jpg"
+                             alt="Homemade beef burger">
+
+                        <span class="recipe-badge">
+                            Classic
+                        </span>
+
+                    </div>
+
+                    <div class="recipe-content">
+
+                        <div class="recipe-meta">
+                            <span>30 min</span>
+                            <span>4 servings</span>
+                        </div>
+
+                        <h3>Beef Burger</h3>
+
+                        <p>
+                            A juicy homemade burger with fresh,
+                            flavorful ingredients.
+                        </p>
+
+                        <a href="beef-burger.html"
+                           class="card-link">
+                            View Recipe →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="recipe-card">
+
+                    <div class="recipe-image">
+
+                        <img src="../assets/images/pancakes.jpg"
+                             alt="Fluffy pancakes">
+
+                        <span class="recipe-badge">
+                            Breakfast
+                        </span>
+
+                    </div>
+
+                    <div class="recipe-content">
+
+                        <div class="recipe-meta">
+                            <span>25 min</span>
+                            <span>4 servings</span>
+                        </div>
+
+                        <h3>Fluffy Pancakes</h3>
+
+                        <p>
+                            Soft and fluffy pancakes perfect
+                            for breakfast.
+                        </p>
+
+                        <a href="pancakes.html"
+                           class="card-link">
+                            View Recipe →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="recipe-card">
+
+                    <div class="recipe-image">
+
+                        <img src="../assets/images/grilled-chicken.jpg"
+                             alt="Grilled chicken">
+
+                        <span class="recipe-badge">
+                            Healthy
+                        </span>
+
+                    </div>
+
+                    <div class="recipe-content">
+
+                        <div class="recipe-meta">
+                            <span>35 min</span>
+                            <span>2 servings</span>
+                        </div>
+
+                        <h3>Grilled Chicken</h3>
+
+                        <p>
+                            Tender grilled chicken with herbs
+                            and fresh flavors.
+                        </p>
+
+                        <a href="grilled-chicken.html" class="card-link">View Recipe →</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="../index.html" class="logo">
+                Tasty<span>Recipes</span>
+            </a>
+
+            <p>
+                Simple recipes, everyday ingredients
+                and delicious results.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Navigation</h3>
+
             <a href="../index.html">Home</a>
             <a href="../recipes.html">Recipes</a>
             <a href="../about.html">About</a>
             <a href="../contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <main>
+        </div>
 
-        <article>
-            <h2>Chicken Pasta</h2>
-            <p>A creamy and delicious chicken pasta perfect for a quick homemade meal.</p>
 
-            <section>
-                <h3>Recipe Information</h3>
-                <p><strong>Preparation Time:</strong> 15 minutes</p>
-                <p><strong>Cooking Time:</strong> 25 minutes</p>
-                <p><strong>Servings:</strong> 4</p>
-            </section>
+        <div>
 
-            <section>
-                <h3>Ingredients</h3>
+            <h3>Popular Recipes</h3>
 
-                <ul>
-                    <li>250g pasta</li>
-                    <li>300g boneless chicken</li>
-                    <li>1 tablespoon cooking oil</li>
-                    <li>2 cloves garlic</li>
-                    <li>1 cup cooking cream</li>
-                    <li>1/2 cup grated cheese</li>
-                    <li>Salt to taste</li>
-                    <li>Black pepper to taste</li>
-                </ul>
-            </section>
+            <a href="chicken-pasta.html">Chicken Pasta</a>
+            <a href="beef-burger.html">Beef Burger</a>
+            <a href="pancakes.html">Pancakes</a>
 
-            <section>
-                <h3>Instructions</h3>
+        </div>
 
-                <ol>
-                    <li>Boil the pasta according to the package instructions.</li>
-                    <li>Cut the chicken into small pieces.</li>
-                    <li>Heat oil in a pan and cook the chicken until golden.</li>
-                    <li>Add chopped garlic and cook for one minute.</li>
-                    <li>Add the cooking cream and mix well.</li>
-                    <li>Add cheese, salt, and black pepper.</li>
-                    <li>Add the cooked pasta and mix everything together.</li>
-                    <li>Cook for another 2–3 minutes and serve hot.</li>
-                </ol>
-            </section>
+    </div>
 
+
+    <div class="footer-bottom">
+
+        <div class="container">
             <p>
-                <a href="../recipes.html">Back to Recipes</a>
+                &copy; 2026 Tasty Recipes.
+                Built by Muhammad Awais Khalid.
             </p>
+        </div>
 
-        </article>
+    </div>
 
-    </main>
+</footer>
 
-    <footer>
-        <p>&copy; 2026 Tasty Recipes. All rights reserved.</p>
-    </footer>
+
+<script src="../assets/js/main.js"></script>
 
 </body>
-
 </html>

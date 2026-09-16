@@ -1,59 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse delicious homemade recipes from Tasty Recipes.">
-    <title>Tasty Recipes | Recipes</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="description"
+          content="Explore delicious homemade recipes including pasta, burgers, pancakes, chicken, pizza, salads, rice and desserts.">
+
+    <title>Recipes | Tasty Recipes</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Tasty Recipes</h1>
-        <p>Simple recipes. Delicious results.</p>
+    <!-- ================= HEADER ================= -->
 
-        <nav>
+    <header class="site-header">
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Tasty<span>Recipes</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
             <a href="index.html">Home</a>
-            <a href="recipes.html">Recipes</a>
+
+            <div class="nav-dropdown">
+                <a href="recipes.html" class="dropdown-toggle active">
+                    Recipes <span class="dropdown-arrow"></span>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="recipes.html">All Recipes</a>
+                    <a href="recipes.html?category=breakfast">Breakfast</a>
+                    <a href="recipes.html?category=lunch">Lunch</a>
+                    <a href="recipes.html?category=dinner">Dinner</a>
+                    <a href="recipes.html?category=healthy">Healthy</a>
+                    <a href="recipes.html?category=dessert">Dessert</a>
+                </div>
+            </div>
+
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+
         </nav>
-    </header>
+
+    </div>
+</header>
+
 
     <main>
 
-        <section>
-            <h2>Our Recipes</h2>
-            <p>Choose a recipe below and start cooking.</p>
+        <!-- ================= PAGE HERO ================= -->
 
-            <article>
-                <h3>Chicken Pasta</h3>
-                <p>Creamy and delicious chicken pasta for a quick homemade meal.</p>
-                <a href="recipes/chicken-pasta.html">View Recipe</a>
-            </article>
+        <section class="recipes-hero">
+            <div class="container recipes-hero-content">
 
-            <article>
-                <h3>Beef Burger</h3>
-                <p>A juicy homemade beef burger made with simple ingredients.</p>
-                <a href="recipes/beef-burger.html">View Recipe</a>
-            </article>
+                <span class="eyebrow">Explore Our Kitchen</span>
 
-            <article>
-                <h3>Pancakes</h3>
-                <p>Soft and fluffy pancakes perfect for breakfast.</p>
-                <a href="recipes/pancakes.html">View Recipe</a>
-            </article>
+                <h1>
+                    Find something
+                    <span>delicious.</span>
+                </h1>
+
+                <p>
+                    Discover simple, flavorful recipes for every mood,
+                    from quick weekday meals to comforting desserts.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ================= SEARCH & FILTER ================= -->
+
+        <section class="recipe-browser section">
+
+            <div class="container">
+
+                <div class="recipe-tools">
+
+                    <div class="recipe-search">
+                        <span>⌕</span>
+
+                        <input
+                            type="search"
+                            id="recipeSearch"
+                            placeholder="Search recipes..."
+                            aria-label="Search recipes">
+                    </div>
+
+
+                    <div class="recipe-filters" id="recipeFilters">
+
+                        <button
+                            class="filter-btn active"
+                            data-filter="all">
+                            All
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="breakfast">
+                            Breakfast
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="lunch">
+                            Lunch
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="dinner">
+                            Dinner
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="healthy">
+                            Healthy
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="dessert">
+                            Dessert
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= RECIPE GRID ================= -->
+
+                <div class="recipe-grid recipe-catalogue"
+                     id="recipeGrid">
+
+
+                    <!-- Chicken Pasta -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="dinner"
+                        data-name="chicken pasta">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/chicken-pasta.jpg"
+                                alt="Creamy chicken pasta">
+
+                            <span class="recipe-badge">
+                                Popular
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>40 min</span>
+                                <span>4 servings</span>
+                            </div>
+
+                            <h3>Chicken Pasta</h3>
+
+                            <p>
+                                Creamy pasta with tender chicken and
+                                rich savory flavors.
+                            </p>
+
+                            <a
+                                href="recipes/chicken-pasta.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Beef Burger -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="lunch"
+                        data-name="beef burger">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/beef-burger.jpg"
+                                alt="Homemade beef burger">
+
+                            <span class="recipe-badge">
+                                Classic
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>30 min</span>
+                                <span>4 servings</span>
+                            </div>
+
+                            <h3>Beef Burger</h3>
+
+                            <p>
+                                A juicy homemade burger layered with
+                                fresh and flavorful ingredients.
+                            </p>
+
+                            <a
+                                href="recipes/beef-burger.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pancakes -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="breakfast"
+                        data-name="fluffy pancakes">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/pancakes.jpg"
+                                alt="Stack of fluffy pancakes">
+
+                            <span class="recipe-badge">
+                                Breakfast
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>25 min</span>
+                                <span>4 servings</span>
+                            </div>
+
+                            <h3>Fluffy Pancakes</h3>
+
+                            <p>
+                                Soft and fluffy pancakes perfect for
+                                a relaxed morning breakfast.
+                            </p>
+
+                            <a
+                                href="recipes/pancakes.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Grilled Chicken -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="healthy dinner"
+                        data-name="grilled chicken">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/grilled-chicken.jpg"
+                                alt="Grilled chicken">
+
+                            <span class="recipe-badge">
+                                Healthy
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>35 min</span>
+                                <span>2 servings</span>
+                            </div>
+
+                            <h3>Grilled Chicken</h3>
+
+                            <p>
+                                Tender grilled chicken with herbs,
+                                seasoning and fresh flavors.
+                            </p>
+
+                            <a href="recipes/grilled-chicken.html"
+                                class="card-link">
+                                 View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Pizza -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="dinner"
+                        data-name="homemade pizza">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/pizza.jpg"
+                                alt="Homemade pizza">
+
+                            <span class="recipe-badge">
+                                Favorite
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>50 min</span>
+                                <span>4 servings</span>
+                            </div>
+
+                            <h3>Homemade Pizza</h3>
+
+                            <p>
+                                Crispy homemade pizza topped with
+                                cheese and fresh ingredients.
+                            </p>
+
+                            <a href="recipes/pizza.html"
+                                class="card-link">
+                                    View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Chocolate Cake -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="dessert"
+                        data-name="chocolate cake">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/chocolate-cake.jpg"
+                                alt="Chocolate cake">
+
+                            <span class="recipe-badge">
+                                Dessert
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>60 min</span>
+                                <span>8 servings</span>
+                            </div>
+
+                            <h3>Chocolate Cake</h3>
+
+                            <p>
+                                Rich chocolate cake with a soft,
+                                moist texture and indulgent flavor.
+                            </p>
+
+                            <a href="recipes/chocolate-cake.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Fresh Salad -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="healthy lunch"
+                        data-name="fresh salad">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/fresh-salad.jpg"
+                                alt="Fresh healthy salad">
+
+                            <span class="recipe-badge">
+                                Fresh
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>15 min</span>
+                                <span>2 servings</span>
+                            </div>
+
+                            <h3>Fresh Salad</h3>
+
+                            <p>
+                                Crisp vegetables combined into a
+                                colorful and refreshing meal.
+                            </p>
+
+                            <a href="recipes/fresh-salad.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Fried Rice -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="lunch dinner"
+                        data-name="fried rice">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/fried-rice.jpg"
+                                alt="Homemade fried rice">
+
+                            <span class="recipe-badge">
+                                Quick
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>25 min</span>
+                                <span>3 servings</span>
+                            </div>
+
+                            <h3>Fried Rice</h3>
+
+                            <p>
+                                Flavorful fried rice packed with
+                                vegetables and everyday ingredients.
+                            </p>
+
+                            <a href="recipes/fried-rice.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Breakfast Bowl -->
+
+                    <article
+                        class="recipe-card searchable-recipe"
+                        data-category="breakfast healthy"
+                        data-name="breakfast bowl">
+
+                        <div class="recipe-image">
+
+                            <img
+                                src="assets/images/breakfast-bowl.jpg"
+                                alt="Healthy breakfast bowl">
+
+                            <span class="recipe-badge">
+                                Morning
+                            </span>
+
+                        </div>
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-meta">
+                                <span>10 min</span>
+                                <span>1 serving</span>
+                            </div>
+
+                            <h3>Breakfast Bowl</h3>
+
+                            <p>
+                                A colorful breakfast bowl for a
+                                fresh and energizing start.
+                            </p>
+
+                            <a href="recipes/breakfast-bowl.html"
+                                class="card-link">
+                                View Recipe →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- No Search Results -->
+
+                <div class="no-results" id="noResults">
+                    <h3>No recipes found.</h3>
+                    <p>Try another search or category.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="container cta">
+
+                <div>
+                    <span class="eyebrow">
+                        Start Cooking
+                    </span>
+
+                    <h2>
+                        Great food starts with a simple recipe.
+                    </h2>
+
+                    <p>
+                        Explore our collection and discover something
+                        worth cooking today.
+                    </p>
+                </div>
+
+                <a href="contact.html"
+                   class="btn btn-light">
+                    Contact Us
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Tasty Recipes. All rights reserved.</p>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    Tasty<span>Recipes</span>
+                </a>
+
+                <p>
+                    Simple recipes, everyday ingredients
+                    and delicious results.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Navigation</h3>
+
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Popular Recipes</h3>
+
+                <a href="recipes/chicken-pasta.html">
+                    Chicken Pasta
+                </a>
+
+                <a href="recipes/beef-burger.html">
+                    Beef Burger
+                </a>
+
+                <a href="recipes/pancakes.html">
+                    Pancakes
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+                <p>
+                    &copy; 2026 Tasty Recipes.
+                    Built by Muhammad Awais Khalid.
+                </p>
+            </div>
+
+        </div>
+
     </footer>
 
-</body>
 
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>

@@ -1,82 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Easy homemade pancake recipe with ingredients and instructions.">
-    <title>Pancakes | Tasty Recipes</title>
+
+    <meta name="description"
+          content="Learn how to make soft and fluffy homemade pancakes with simple ingredients and easy instructions.">
+
+    <title>Fluffy Pancakes | Tasty Recipes</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Tasty Recipes</h1>
+<header class="site-header">
+    <div class="container navbar">
 
-        <nav>
+        <a href="../index.html" class="logo">
+            Tasty<span>Recipes</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="../index.html">Home</a>
+
+            <div class="nav-dropdown">
+                <a href="../recipes.html" class="dropdown-toggle active">
+                    Recipes <span class="dropdown-arrow"></span>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="../recipes.html">All Recipes</a>
+                    <a href="../recipes.html?category=breakfast">Breakfast</a>
+                    <a href="../recipes.html?category=lunch">Lunch</a>
+                    <a href="../recipes.html?category=dinner">Dinner</a>
+                    <a href="../recipes.html?category=healthy">Healthy</a>
+                    <a href="../recipes.html?category=dessert">Dessert</a>
+                </div>
+            </div>
+
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- RECIPE HERO -->
+
+    <section class="recipe-detail-hero">
+
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <a href="../recipes.html">Recipes</a>
+                <span>›</span>
+                <span>Fluffy Pancakes</span>
+            </div>
+
+
+            <div class="recipe-detail-heading">
+
+                <span class="eyebrow">
+                    Breakfast • Favorite
+                </span>
+
+                <h1>
+                    Fluffy Homemade
+                    <span>Pancakes.</span>
+                </h1>
+
+                <p>
+                    Light, soft and golden pancakes made with
+                    everyday ingredients for an easy and comforting
+                    breakfast.
+                </p>
+
+            </div>
+
+
+            <div class="recipe-detail-image">
+                <img src="../assets/images/pancakes.jpg"
+                     alt="Stack of fluffy homemade pancakes">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECIPE INFORMATION -->
+
+    <section class="recipe-info-bar">
+
+        <div class="container recipe-info-grid">
+
+            <div>
+                <span>Prep Time</span>
+                <strong>10 min</strong>
+            </div>
+
+            <div>
+                <span>Cook Time</span>
+                <strong>15 min</strong>
+            </div>
+
+            <div>
+                <span>Total Time</span>
+                <strong>25 min</strong>
+            </div>
+
+            <div>
+                <span>Servings</span>
+                <strong>4</strong>
+            </div>
+
+            <div>
+                <span>Difficulty</span>
+                <strong>Easy</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INGREDIENTS + INSTRUCTIONS -->
+
+    <section class="recipe-body section">
+
+        <div class="container recipe-body-grid">
+
+            <aside class="ingredients-card">
+
+                <span class="eyebrow">What You'll Need</span>
+
+                <h2>Ingredients</h2>
+
+                <div class="ingredient-list">
+
+                    <label>
+                        <input type="checkbox">
+                        <span>2 cups all-purpose flour</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>2 tablespoons sugar</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>2 teaspoons baking powder</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>½ teaspoon salt</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>2 large eggs</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>1½ cups milk</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>2 tablespoons melted butter</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>1 teaspoon vanilla extract</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Butter or oil for cooking</span>
+                    </label>
+
+                </div>
+
+            </aside>
+
+
+            <div class="instructions">
+
+                <span class="eyebrow">Step By Step</span>
+
+                <h2>Instructions</h2>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">01</span>
+
+                    <div>
+                        <h3>Mix the dry ingredients</h3>
+
+                        <p>
+                            Add the flour, sugar, baking powder
+                            and salt to a large bowl. Whisk until
+                            evenly combined.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">02</span>
+
+                    <div>
+                        <h3>Prepare the wet mixture</h3>
+
+                        <p>
+                            In another bowl, whisk the eggs, milk,
+                            melted butter and vanilla extract
+                            together until smooth.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">03</span>
+
+                    <div>
+                        <h3>Make the batter</h3>
+
+                        <p>
+                            Pour the wet ingredients into the dry
+                            ingredients. Stir gently until just
+                            combined. A few small lumps are fine.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">04</span>
+
+                    <div>
+                        <h3>Heat the pan</h3>
+
+                        <p>
+                            Place a non-stick pan over medium heat
+                            and lightly coat it with butter or oil.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">05</span>
+
+                    <div>
+                        <h3>Cook the pancakes</h3>
+
+                        <p>
+                            Pour a small amount of batter into the
+                            pan. Cook until bubbles appear on the
+                            surface and the edges begin to set.
+                            Flip and cook the other side until golden.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="instruction-step">
+
+                    <span class="step-number">06</span>
+
+                    <div>
+                        <h3>Serve warm</h3>
+
+                        <p>
+                            Stack the pancakes and serve while warm
+                            with fruit, honey, maple syrup or your
+                            favorite toppings.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHEF TIP -->
+
+    <section class="recipe-tip-section">
+
+        <div class="container">
+
+            <div class="recipe-tip">
+
+                <span class="tip-label">Chef's Tip</span>
+
+                <h2>
+                    Don't overmix the batter.
+                </h2>
+
+                <p>
+                    Mix only until the ingredients come together.
+                    Overmixing can make pancakes dense instead of
+                    light and fluffy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RELATED RECIPES -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">Keep Cooking</span>
+                    <h2>You might also like.</h2>
+                </div>
+
+                <a href="../recipes.html"
+                   class="text-link">
+                    View All Recipes →
+                </a>
+
+            </div>
+
+
+            <div class="recipe-grid related-recipes">
+
+                <article class="recipe-card">
+
+                    <div class="recipe-image">
+                        <img src="../assets/images/chicken-pasta.jpg"
+                             alt="Creamy chicken pasta">
+
+                        <span class="recipe-badge">Popular</span>
+                    </div>
+
+                    <div class="recipe-content">
+
+                        <div class="recipe-meta">
+                            <span>40 min</span>
+                            <span>4 servings</span>
+                        </div>
+
+                        <h3>Chicken Pasta</h3>
+
+                        <p>
+                            Creamy pasta with tender chicken
+                            and rich savory flavors.
+                        </p>
+
+                        <a href="chicken-pasta.html"
+                           class="card-link">
+                            View Recipe →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="recipe-card">
+
+                    <div class="recipe-image">
+                        <img src="../assets/images/beef-burger.jpg"
+                             alt="Homemade beef burger">
+
+                        <span class="recipe-badge">Classic</span>
+                    </div>
+
+                    <div class="recipe-content">
+
+                        <div class="recipe-meta">
+                            <span>30 min</span>
+                            <span>4 servings</span>
+                        </div>
+
+                        <h3>Beef Burger</h3>
+
+                        <p>
+                            A juicy homemade burger layered
+                            with fresh ingredients.
+                        </p>
+
+                        <a href="beef-burger.html"
+                           class="card-link">
+                            View Recipe →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="recipe-card">
+
+                    <div class="recipe-image">
+                        <img src="../assets/images/breakfast-bowl.jpg"
+                             alt="Healthy breakfast bowl">
+
+                        <span class="recipe-badge">Healthy</span>
+                    </div>
+
+                    <div class="recipe-content">
+
+                        <div class="recipe-meta">
+                            <span>10 min</span>
+                            <span>1 serving</span>
+                        </div>
+
+                        <h3>Breakfast Bowl</h3>
+
+                        <p>
+                            A fresh and colorful breakfast
+                            for an energizing start.
+                        </p>
+
+                        <a href="breakfast-bowl.html" class="card-link">View Recipe →</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="../index.html" class="logo">
+                Tasty<span>Recipes</span>
+            </a>
+
+            <p>
+                Simple recipes, everyday ingredients
+                and delicious results.
+            </p>
+
+        </div>
+
+        <div>
+            <h3>Navigation</h3>
+
             <a href="../index.html">Home</a>
             <a href="../recipes.html">Recipes</a>
             <a href="../about.html">About</a>
             <a href="../contact.html">Contact</a>
-        </nav>
-    </header>
+        </div>
 
-    <main>
+        <div>
+            <h3>Popular Recipes</h3>
 
-        <article>
-            <h2>Pancakes</h2>
-            <p>Soft and fluffy homemade pancakes perfect for breakfast.</p>
+            <a href="chicken-pasta.html">Chicken Pasta</a>
+            <a href="beef-burger.html">Beef Burger</a>
+            <a href="pancakes.html">Pancakes</a>
+        </div>
 
-            <section>
-                <h3>Recipe Information</h3>
-                <p><strong>Preparation Time:</strong> 10 minutes</p>
-                <p><strong>Cooking Time:</strong> 15 minutes</p>
-                <p><strong>Servings:</strong> 4</p>
-            </section>
+    </div>
 
-            <section>
-                <h3>Ingredients</h3>
 
-                <ul>
-                    <li>1 1/2 cups all-purpose flour</li>
-                    <li>1 tablespoon baking powder</li>
-                    <li>2 tablespoons sugar</li>
-                    <li>1/4 teaspoon salt</li>
-                    <li>1 egg</li>
-                    <li>1 1/4 cups milk</li>
-                    <li>2 tablespoons melted butter</li>
-                    <li>Honey or syrup for serving</li>
-                </ul>
-            </section>
+    <div class="footer-bottom">
 
-            <section>
-                <h3>Instructions</h3>
-
-                <ol>
-                    <li>Mix the flour, baking powder, sugar, and salt in a bowl.</li>
-                    <li>In another bowl, whisk the egg, milk, and melted butter.</li>
-                    <li>Add the wet ingredients to the dry ingredients.</li>
-                    <li>Mix gently until combined.</li>
-                    <li>Heat a lightly greased pan over medium heat.</li>
-                    <li>Pour a small amount of batter into the pan.</li>
-                    <li>Cook until bubbles appear, then flip the pancake.</li>
-                    <li>Cook the other side until golden.</li>
-                    <li>Serve warm with honey or syrup.</li>
-                </ol>
-            </section>
-
+        <div class="container">
             <p>
-                <a href="../recipes.html">Back to Recipes</a>
+                &copy; 2026 Tasty Recipes.
+                Built by Muhammad Awais Khalid.
             </p>
+        </div>
 
-        </article>
+    </div>
 
-    </main>
+</footer>
 
-    <footer>
-        <p>&copy; 2026 Tasty Recipes. All rights reserved.</p>
-    </footer>
+
+<script src="../assets/js/main.js"></script>
 
 </body>
-
 </html>

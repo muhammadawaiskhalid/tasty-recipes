@@ -1,71 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Tasty Recipes with your questions, feedback, or recipe suggestions.">
-    <title>Tasty Recipes | Contact</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <meta name="description"
+          content="Contact Tasty Recipes with questions, recipe suggestions or feedback.">
+
+    <title>Contact | Tasty Recipes</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Tasty Recipes</h1>
-        <p>Simple recipes. Delicious results.</p>
+<header class="site-header">
+    <div class="container navbar">
 
-        <nav>
+        <a href="index.html" class="logo">
+            Tasty<span>Recipes</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html">Home</a>
+
+            <div class="nav-dropdown">
+                <a href="recipes.html" class="dropdown-toggle">
+                    Recipes <span class="dropdown-arrow"></span>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="recipes.html">All Recipes</a>
+                    <a href="recipes.html?category=breakfast">Breakfast</a>
+                    <a href="recipes.html?category=lunch">Lunch</a>
+                    <a href="recipes.html?category=dinner">Dinner</a>
+                    <a href="recipes.html?category=healthy">Healthy</a>
+                    <a href="recipes.html?category=dessert">Dessert</a>
+                </div>
+            </div>
+
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- CONTACT HERO -->
+
+    <section class="contact-hero">
+
+        <div class="container contact-hero-content">
+
+            <span class="eyebrow">Get In Touch</span>
+
+            <h1>
+                We'd love to
+                <span>hear from you.</span>
+            </h1>
+
+            <p>
+                Have a recipe suggestion, question or feedback?
+                Send us a message and share what's on your mind.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT CONTENT -->
+
+    <section class="contact-section section">
+
+        <div class="container contact-grid">
+
+            <!-- LEFT SIDE -->
+
+            <div class="contact-info">
+
+                <span class="eyebrow">Let's Talk</span>
+
+                <h2>
+                    Food is better when ideas are shared.
+                </h2>
+
+                <p>
+                    Whether you discovered a new recipe idea,
+                    have feedback about the website or simply
+                    want to say hello, we'd be happy to hear
+                    from you.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">01</div>
+
+                        <div>
+                            <h3>Recipe Suggestions</h3>
+                            <p>
+                                Share dishes you'd like to see
+                                added to our collection.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">02</div>
+
+                        <div>
+                            <h3>Website Feedback</h3>
+                            <p>
+                                Tell us what you enjoy or what
+                                could make the experience better.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">03</div>
+
+                        <div>
+                            <h3>General Questions</h3>
+                            <p>
+                                Send us any questions about
+                                recipes or the website.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="contact-form-wrapper">
+
+                <form id="contactForm"
+                      class="contact-form"
+                      novalidate>
+
+                    <div class="form-header">
+
+                        <h2>Send a message</h2>
+
+                        <p>
+                            Fill in the form below and we'll
+                            make sure your message is ready.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your full name">
+
+                            <small class="form-error"></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com">
+
+                            <small class="form-error"></small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is this about?">
+
+                        <small class="form-error"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message here..."></textarea>
+
+                        <small class="form-error"></small>
+
+                    </div>
+
+
+                    <button type="submit"
+                            class="btn btn-primary form-submit">
+                        Send Message
+                    </button>
+
+
+                    <div id="formSuccess"
+                         class="form-success"
+                         role="status">
+                        Message validated successfully.
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                Tasty<span>Recipes</span>
+            </a>
+
+            <p>
+                Simple recipes, everyday ingredients
+                and delicious results.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Navigation</h3>
+
             <a href="index.html">Home</a>
             <a href="recipes.html">Recipes</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <main>
+        </div>
 
-        <section>
-            <h2>Contact Us</h2>
 
+        <div>
+
+            <h3>Popular Recipes</h3>
+
+            <a href="recipes/chicken-pasta.html">
+                Chicken Pasta
+            </a>
+
+            <a href="recipes/beef-burger.html">
+                Beef Burger
+            </a>
+
+            <a href="recipes/pancakes.html">
+                Pancakes
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
             <p>
-                Have a question, suggestion, or recipe idea?
-                Send us a message using the form below.
+                &copy; 2026 Tasty Recipes.
+                Built by Muhammad Awais Khalid.
             </p>
+        </div>
 
-            <form action="#" method="post">
+    </div>
 
-                <p>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required>
-                </p>
+</footer>
 
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
 
-                <p>
-                    <label for="subject">Subject:</label><br>
-                    <input type="text" id="subject" name="subject" required>
-                </p>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </p>
-
-                <button type="submit">Send Message</button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Tasty Recipes. All rights reserved.</p>
-    </footer>
+<script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
