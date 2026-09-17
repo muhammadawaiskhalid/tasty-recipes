@@ -5,7 +5,7 @@ A modern, responsive recipe website built with **HTML5, CSS3, and Vanilla JavaSc
 ## 🌐 Live Demo
 
 **GitHub Pages:**  
-https://muhammadawaiskhalid.github.io/01-tasty-recipes-html/
+https://muhammadawaiskhalid.github.io/tasty-recipes/
 
 ## ✨ Features
 
@@ -53,7 +53,7 @@ The website currently includes:
 ## 📁 Project Structure
 
 ```text
-01-tasty-recipes-html/
+tasty-recipes/
 ├── assets/
 │   ├── css/
 │   │   └── style.css
@@ -89,13 +89,13 @@ The website currently includes:
 Clone the repository:
 
 ```bash
-git clone https://github.com/muhammadawaiskhalid/01-tasty-recipes-html.git
+git clone https://github.com/muhammadawaiskhalid/tasty-recipes.git
 ```
 
 Open the project directory:
 
 ```bash
-cd 01-tasty-recipes-html
+cd tasty-recipes
 ```
 
 Then open `index.html` in your browser.
